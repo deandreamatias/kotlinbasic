@@ -9,15 +9,15 @@
     <fragment
         android:id="@+id/activityList"
         android:name="com.slashmobility.seleccion.matias.deandrea.ui.ListFragment"
-        android:label="fragment_activity_list"
-        tools:layout="@layout/fragment_activity_list" />
+        android:label="fragment_list"
+        tools:layout="@layout/fragment_list" />
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.slashmobility.seleccion.matias.deandrea.ui.MainFragment"
-        android:label="fragment_activity_main"
-        tools:layout="@layout/fragment_activity_main" >
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
         <action
-            android:id="@+id/action_mainFragment_to_activityList2"
+            android:id="@+id/action_mainFragment_to_activityList"
             app:destination="@id/activityList" />
     </fragment>
 </navigation>
