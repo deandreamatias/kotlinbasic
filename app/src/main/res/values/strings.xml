@@ -12,7 +12,4 @@
     <string name="btn_remove_all">Remove all entries</string>
     <string name="btn_sort">Sort ascending</string>
     <string name="label_list">Number list</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
