@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.slashmobility.seleccion.matias.deandrea.R.layout
 
-
+// LIST ADAPTER: Configure adapter to recycler view
 class ListAdapter (private val list: Array<Int>): RecyclerView.Adapter<TextItemViewHolder>() {
 
     override fun onBindViewHolder(holder: TextItemViewHolder, position: Int) {

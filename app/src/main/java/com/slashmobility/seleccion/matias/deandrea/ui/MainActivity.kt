@@ -6,7 +6,6 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.NavHostFragment
 import com.slashmobility.seleccion.matias.deandrea.R
 
-
 // MAIN ACTIVITY: Main activity of application
 // load and config navigation
 class MainActivity : AppCompatActivity() {

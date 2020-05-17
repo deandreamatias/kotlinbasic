@@ -11,6 +11,7 @@ import com.slashmobility.seleccion.matias.deandrea.R
 import com.slashmobility.seleccion.matias.deandrea.core.MainViewModel
 import com.slashmobility.seleccion.matias.deandrea.databinding.FragmentMainBinding
 
+// MAIN FRAGMENT: Manage interaction and call view model actions of main fragment
 class MainFragment : Fragment() {
 
     private val viewModel: MainViewModel by lazy {
@@ -27,7 +28,6 @@ class MainFragment : Fragment() {
         // Giving the binding access to MainViewModel
         binding.viewModel = viewModel
 
-        // Execute 'some things' when press in CALL SERVICE button
         binding.btnCallService.setOnClickListener {
             viewModel.getOrigin()
         }

@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-// API SERVICE: Service to request of API
+// API SERVICE: Service to API request
 private const val API_URL = "https://httpbin.org/"
 
 private val moshi = Moshi.Builder()
