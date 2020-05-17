@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.slashmobility.seleccion.matias.deandrea.core.ListViewModel
 import com.slashmobility.seleccion.matias.deandrea.databinding.FragmentListBinding
 
-
+// LIST FRAGMENT: Manage interaction and call view model actions of list fragment
 class ListFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View {
@@ -38,7 +38,8 @@ class ListFragment : Fragment() {
         });
 
         binding.btnAdd.setOnClickListener {
-            viewModel.createList(binding.fieldNumberAdd.text.toString().toInt())
+            if (!binding.fieldNumberAdd.text.isNullOrEmpty())
+                viewModel.createList(binding.fieldNumberAdd.text.toString().toInt())
         }
 
         binding.btnRemove.setOnClickListener {
@@ -49,6 +50,7 @@ class ListFragment : Fragment() {
             viewModel.orderList()
         }
 
+        // Delete item with swiped action
         ItemTouchHelper(object : ItemTouchHelper.SimpleCallback(
             0,
             ItemTouchHelper.LEFT or ItemTouchHelper.RIGHT
